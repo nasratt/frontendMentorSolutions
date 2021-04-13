@@ -167,10 +167,7 @@ hr {
 
 .card {
   position: relative;
-  /* display: flex;
-  align-content: stretch;
-  align-items: stretch; */
-  /* margin-bottom: 0.5rem; */
+  box-shadow: 5px 5px 15px 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   overflow: hidden;
 }
