@@ -1,0 +1,73 @@
+$brightBlue: hsl(220, 98%, 61%);
+$checkBackground: linear-gradient(
+   to bottom,
+   hsl(192, 100%, 67%),
+   hsl(280, 87%, 65%)
+); // Light Theme
+$veryLightGray: hsl(0, 0%, 98%);
+$veryLightGrayishBlue: hsl(236, 33%, 92%);
+$lightGrayishBlue: hsl(233, 11%, 84%);
+$darkGrayishBlue: hsl(236, 9%, 61%);
+$veryDarkGrayishBlue: hsl(235, 19%, 35%);
+
+body {
+   background-image: url(../images/bg-mobile-light.jpg);
+   @media only screen and (min-width: 768px) {
+      & {
+         background-image: url(../images/bg-desktop-light.jpg);
+         background-size: 100% 27vh;
+      }
+   }
+}
+
+.header__btn {
+   background: url(../images/icon-moon.svg) no-repeat center/contain;
+}
+.todo-list-wrapper {
+   background-color: #ffffff;
+   .message {
+      color: $veryDarkGrayishBlue;
+   }
+}
+.todo-item {
+   color: $veryDarkGrayishBlue;
+   background-color: #ffffff;
+   border-bottom: 1px solid $veryLightGrayishBlue;
+   & .todo-item__checkbox {
+      &::after {
+         background: #fff;
+      }
+      &::before {
+         background: $lightGrayishBlue;
+      }
+   }
+   &.done .todo-item__text {
+      text-decoration: line-through;
+      color: $lightGrayishBlue;
+   }
+}
+.filter {
+   background: #fff;
+}
+.btn {
+   color: $darkGrayishBlue;
+   &.active {
+      color: $brightBlue;
+   }
+   &:not(.active):hover {
+      color: $veryDarkGrayishBlue;
+   }
+}
+.attribution {
+   background: rgba(255, 255, 255, 0.9);
+}
+.header__input::placeholder {
+   color: $darkGrayishBlue;
+}
+.todo-list-info {
+   color: $darkGrayishBlue;
+   border-top: 1px solid $veryLightGrayishBlue;
+}
+.instruction {
+   color: $lightGrayishBlue;
+}

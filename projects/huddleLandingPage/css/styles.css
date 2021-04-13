@@ -1,0 +1,366 @@
+/* ===============================
+CSS Reset down here 
+============================== */
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html *,
+html *:before,
+html *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1.5;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+/* ===============================
+Base styles down here
+============================== */
+body {
+  font-family: poppins, sans-serif;
+  background: fixed url(../images/bg-desktop.svg) center/contain no-repeat, #674baf;
+  padding: 40px 60px;
+}
+
+.btn {
+  border: none;
+  background: none;
+  outline: none;
+  display: inline-block;
+  width: 160px;
+  height: 45px;
+  background-color: #f4f4f4;
+  font-family: 'open sans', sans-serif;
+  border-radius: 50px;
+  -webkit-box-shadow: 0 5px 15px 10px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 5px 15px 10px rgba(0, 0, 0, 0.15);
+  color: #674baf;
+  font-size: 1.1rem;
+  margin-top: 20px;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+/* ===============================
+Elements Styles
+============================== */
+header {
+  margin-bottom: 60px;
+}
+
+header img {
+  height: 40px;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container * {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+}
+
+.container .illustration {
+  margin-right: 40px;
+}
+
+.container .illustration img {
+  max-width: 100%;
+}
+
+.content {
+  color: #f4f4f4;
+}
+
+.content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* ===============================
+footer styles down here
+============================== */
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 30px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.social > span {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #f4f4f4;
+  border-radius: 50%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #f4f4f4;
+}
+
+span:hover {
+  color: #009cfa;
+  border: 2px solid #009CFA;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-right: 100px;
+  color: #111;
+}
+
+.attribution a {
+  color: #e7e1ea;
+}
+
+.attribution a:hover {
+  text-decoration: none;
+}
+
+/* ===============================
+Media Queries 
+============================== */
+@media screen and (max-width: 768px) {
+  body {
+    background: fixed url(../images/bg-mobile.svg) top/contain no-repeat, #674baf;
+  }
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .container * {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .container .illustration {
+    height: auto;
+    margin: 0 0 60px 0;
+  }
+  .container .illustration img {
+    width: 100%;
+  }
+  .content h1 {
+    font-size: 2rem;
+  }
+  footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer .attribution {
+    margin: 0 0 30px 0;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  body {
+    padding: 40px 30px;
+  }
+  .content h1 {
+    font-size: 1.2rem;
+  }
+  .content p {
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,38 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.header__title {
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-size: 28px;
+    font-weight: 700;
+    color: #f3f3f3;
+}
+
+.header__btn {
+    background: none;
+    border: none;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.input__form {
+    width: 100%;
+    box-shadow: 0 5px 40px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border-radius: 8px;
+    margin-top: 40px;
+}
+.header__input {
+    height: 50px;
+    width: 100%;
+    border: none;
+    font-family: inherit;
+    padding: 20px;
+    font-size: 18px;
+    border-radius: 8px;
+}

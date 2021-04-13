@@ -1,0 +1,274 @@
+/* ================ CSS RESET ==================== */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+/* ================ CSS RESET END ==================== */
+
+:root {
+  --DesaturatedRed: hsl(0, 36%, 70%);
+  --SoftRed: hsl(0, 93%, 68%);
+  --DarkGrayishRed: hsl(0, 6%, 24%);
+}
+
+html {
+  box-sizing: border-box;
+}
+html *,
+html *::before,
+html *::after {
+  box-sizing: inherit;
+}
+
+/* Typography */
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 16px;
+}
+h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 30px;
+  letter-spacing: 15px;
+}
+input {
+  font-family: inherit;
+}
+.red-ish {
+  font-weight: 300;
+}
+
+/* Layout */ 
+.container {
+  padding: 0 10vw;
+}
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 10vw;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.header img {
+  width: 10vw;
+  min-width: 150px;
+}
+.wrapper {
+  display: flex;
+}
+.textWrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url("./images/bg-pattern-desktop.svg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  flex: 1 1 60%;
+  padding-top: 100px;
+}
+.girlImg {
+  flex: 0 1 40%;
+  background-image: url("./images/hero-desktop.jpg");
+  background-size: cover;;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+/* textSide styles */
+.red-ish {
+  color: var(--DesaturatedRed);
+}
+
+p {
+  color: var(--DesaturatedRed);
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+/* Form styles */
+.emailForm {
+  position: relative;
+}
+.email {
+  border: none;
+  background: none;
+  outline: none;
+  border: 1px solid var(--DesaturatedRed);
+  height: 50px;
+  width: 100%;
+  border-radius: 60px;
+  padding: 0 25px;
+}
+.email::placeholder {
+  color: var(--DesaturatedRed);
+  opacity: 0.8;
+}
+
+.btn {
+  border: none;
+  background: none;
+  outline: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100px;
+  height: 50px;
+  border-radius: 60px;
+  background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  transition: badkground-image 0.6s;
+}
+.btn:hover {
+  background-image: linear-gradient(135deg, hsl(0, 74%, 74%),  hsl(0, 80%, 86%));
+}
+.btn:active {
+  box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.errorMsg {
+  margin-left: 25px;
+  color: var(--SoftRed);
+  margin-top: 10px;
+  visibility: hidden;
+  transition: 0.3s;
+}
+.notValid {
+  border: 2px solid var(--SoftRed);
+}
+.errorIcon {
+  position: absolute;
+  top: 13px;
+  right: 110px;
+  visibility: hidden;
+  transition: 0.3s;
+}
+.error {
+  visibility: visible;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-image: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+}
+footer p {
+  margin: 0;
+}
+
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    flex-direction: column;
+  }
+  .header {
+    order: 1;
+    height: 15vw;
+  }
+  .girlImg {
+    background-image: none;
+    background-image: url("./images/hero-mobile.jpg");
+    flex: 1 1 40%;
+    order: 2;
+    min-height: 50vw;
+    margin-top: 15vw;
+  }
+  .textWrapper {
+    order: 3;
+    min-height: auto;
+    background-image: none;
+    text-align: center;
+  }
+}

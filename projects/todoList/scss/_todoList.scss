@@ -1,0 +1,120 @@
+.todo-list-wrapper {
+   border-radius: 8px;
+   margin-top: 20px;
+   box-shadow: 0 5px 40px 10px rgba(0, 0, 0, 0.1);
+   overflow: hidden;
+}
+.todo-item {
+   display: flex;
+   align-items: center;
+   padding: 15px 20px;
+   min-height: 55px;
+   user-select: none;
+   cursor: move;
+
+   & .todo-item__checkbox {
+      position: relative;
+      margin-right: 30px;
+      display: inline-block;
+      appearance: none;
+      cursor: pointer;
+      &::after {
+         content: "";
+         display: inline-block;
+         width: 20px;
+         height: 20px;
+         border-radius: 50%;
+         border: none;
+         position: absolute;
+         top: -10px;
+         left: -3px;
+         z-index: 10;
+         transition: background 0s;
+      }
+      &::before {
+         content: "";
+         display: inline-block;
+         width: 22px;
+         height: 22px;
+         border-radius: 50%;
+         position: absolute;
+         top: -11px;
+         left: -4px;
+         // visibility: hidden;
+         z-index: 5;
+      }
+      &:hover::before {
+         background: $checkBackground;
+      }
+
+      &:checked::after {
+         background: no-repeat url(../images/icon-check.svg) center/60%,
+            $checkBackground;
+      }
+   }
+   & .todo-item__text {
+      flex-grow: 1;
+      cursor: move;
+   }
+   & .todo-item__remove-btn {
+      cursor: pointer;
+      &:hover img {
+         filter: invert(0.4) sepia(1) saturate(20) hue-rotate(313.2deg)
+            brightness(0.59);
+      }
+   }
+   @media only screen and (min-width: 768px) {
+      & .todo-item__remove-btn {
+         opacity: 0;
+      }
+      &:hover .todo-item__remove-btn {
+         opacity: 1;
+      }
+   }
+}
+
+.todo-list-info {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   font-size: 16px;
+   padding: 20px;
+   // & .clearCompleted-btn {
+   //   color: $darkGrayishBlue;
+   // }
+}
+
+.filter {
+   height: 50px;
+   border-radius: 8px;
+   margin-top: 20px;
+   box-shadow: 0 5px 40px 10px rgba(0, 0, 0, 0.1);
+   padding: 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   & :not(:last-child) {
+      margin-right: 20px;
+   }
+}
+
+.instruction {
+   text-align: center;
+   margin-top: 70px;
+}
+
+.attribution {
+   width: 100%;
+   font-size: 11px;
+   text-align: center;
+   position: fixed;
+   bottom: 0;
+   left: 50%;
+   transform: translateX(-50%);
+   line-height: 1.5;
+   padding: 10px 0;
+   z-index: 500;
+}
+.attribution a {
+   color: hsl(228, 45%, 44%);
+}

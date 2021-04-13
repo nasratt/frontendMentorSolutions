@@ -1,0 +1,522 @@
+/* ===============================
+CSS Reset down below
+============================== */
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html *,
+html *:before,
+html *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1.5;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+/* ===============================
+Sass variables down below
+============================== */
+/* ===============================
+Base Styles
+============================== */
+body {
+  font-family: 'open sans', Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+.navlink,
+.btn {
+  font-family: raleway, Arial, Helvetica, sans-serif;
+}
+
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 45%;
+      grid-template-columns: 50% 45%;
+  grid-gap: 5%;
+}
+
+.btn {
+  border: none;
+  background: none;
+  outline: none;
+  width: 190px;
+  height: 45px;
+  background-color: #3065f8;
+  color: #ffffff;
+  border-radius: 3px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  -webkit-box-shadow: 3px 3px 5px #bfbfbf;
+          box-shadow: 3px 3px 5px #bfbfbf;
+  opacity: 0.95;
+  -webkit-transition: -webkit-box-shadow 0.5s ease;
+  transition: -webkit-box-shadow 0.5s ease;
+  transition: box-shadow 0.5s ease;
+  transition: box-shadow 0.5s ease, -webkit-box-shadow 0.5s ease;
+}
+
+.btn:hover,
+.btn:focus {
+  -webkit-box-shadow: 1px 1px 5px #bfbfbf;
+          box-shadow: 1px 1px 5px #bfbfbf;
+  opacity: 1;
+}
+
+input[type='email'] {
+  width: 300px;
+  height: 45px;
+  padding: 10px;
+  border-radius: 3px;
+  border: 1px solid #070439;
+}
+
+h1,
+h2 {
+  font-size: 2.5rem;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  line-height: 1.2;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+.quoteCard {
+  max-width: 400px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+  padding: 25px 30px;
+  border-radius: 7px;
+}
+
+.quoteCard .quoteMark {
+  margin-bottom: 20px;
+}
+
+.quoteCard blockquote {
+  margin-bottom: 30px;
+}
+
+.quoteCard img {
+  width: 50px;
+  border-radius: 50%;
+  float: left;
+  margin-right: 10px;
+}
+
+.quoteCard .name {
+  font-size: 80%;
+}
+
+.illustration img {
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ===============================
+Element Styles 
+============================== */
+/* header styles */
+header {
+  padding-top: 50px;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+header li {
+  margin-left: 50px;
+}
+
+header .navlink,
+header .navlink:visited,
+header .navlink:hover,
+header .navlink:active {
+  color: inherit;
+  text-decoration: none;
+}
+
+.logo img {
+  height: 50px;
+}
+
+/* showcase styles */
+.showcase {
+  padding-top: 100px;
+  min-height: 100vh;
+  background: url("/images/bg-curve-desktop.svg") bottom/100% no-repeat;
+}
+
+.showcase input {
+  margin-right: 10px;
+  margin-bottom: 20px;
+  vertical-align: baseline;
+}
+
+.showcase .btn {
+  margin: 0;
+  vertical-align: baseline;
+}
+
+.features {
+  background-color: #f8f8fe;
+  padding: 60px 0;
+}
+
+.features a {
+  display: inline-block;
+  color: #499287;
+  margin-bottom: 40px;
+}
+
+.signIn {
+  padding: 60px 0;
+  background-color: #585989;
+  color: #fff;
+}
+
+.signIn h2 {
+  margin-top: 0;
+}
+
+.signIn input {
+  width: 90%;
+  margin-bottom: 20px;
+  border: none;
+}
+
+.signIn .btn {
+  -webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.08);
+          box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.08);
+}
+
+/* ===============================
+Footer styles down below
+============================== */
+footer {
+  background-color: #070439;
+  padding: 60px 0;
+  color: #fff;
+}
+
+footer img {
+  margin-left: 5%;
+  margin-bottom: 10px;
+}
+
+footer li {
+  margin-bottom: 10px;
+}
+
+footer p {
+  margin-bottom: 10px;
+}
+
+.ftrContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.ftrContainer * {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 0px;
+          flex: 1 1 0;
+}
+
+.contactInfo i {
+  margin-right: 10px;
+}
+
+.social > span {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #f4f4f4;
+  border-radius: 50%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #f4f4f4;
+}
+
+.social > span i {
+  text-align: center;
+}
+
+span:hover {
+  color: #009cfa;
+  border: 2px solid #009CFA;
+}
+
+.attribution {
+  margin-bottom: 0;
+  font-size: 14px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #585989;
+}
+
+/* ===============================
+Media Qureries below
+============================== */
+@media screen and (max-width: 768px) {
+  header .container {
+    -ms-grid-columns: 1fr 2fr;
+        grid-template-columns: 1fr 2fr;
+  }
+  h1,
+  h2 {
+    font-size: 2rem;
+  }
+  .container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .illustration {
+    -ms-grid-row: 1;
+    grid-row: 1;
+  }
+  .showcase {
+    background: url("/images/bg-curve-mobile.svg") bottom/100% no-repeat;
+  }
+  .features {
+    padding-bottom: 150px;
+  }
+  input[type='email'] {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .ftrContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .ftrContainer > * {
+    margin-bottom: 20px;
+  }
+  .ftrContainer .social {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  header .container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  header .container li {
+    margin-left: 0;
+  }
+  header .container ul {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}

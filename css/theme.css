@@ -1,0 +1,230 @@
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 1em; /* currently ems cause chrome bug misinterpreting rems on body element */
+  line-height: 1.5;
+  font-weight: 400;
+  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  color: #222;
+}
+
+/* Typography
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  font-weight: 300;
+}
+h1 {
+  font-size: 2rem;
+  line-height: 1.2;
+}
+h2 {
+  font-size: 1.8rem;
+  line-height: 1.25;
+}
+h3 {
+  font-size: 1.6rem;
+  line-height: 1.3;
+}
+h4 {
+  font-size: 1.4rem;
+  line-height: 1.35;
+}
+h5 {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+h6 {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+p {
+  margin-top: 0;
+}
+
+/* Links
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+a {
+  color: #1eaedb;
+}
+
+a.link-block {
+  display: block;
+  width: 160px;
+  margin: 10px auto;
+}
+a:hover {
+  color: #0fa0ce;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+section {
+  margin: 3rem auto;
+}
+
+button {
+  background-color: #000;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  height: auto;
+  padding: 8px 37px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  vertical-align: middle;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+button.pw {
+  width: 100%;
+}
+
+button:hover,
+button:focus {
+  background-color: #fff;
+  color: #000;
+}
+
+button.light {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid transparent;
+}
+
+button.light:hover,
+button.light:focus {
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #e1e0e0;
+}
+
+.margin-bottom {
+  margin-bottom: 5rem;
+}
+
+.margin-bottom-small {
+  margin-bottom: 1rem;
+}
+
+.padding-small {
+  padding: 1rem;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #eee;
+}
+
+.section-title {
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+.flex {
+  display: flex;
+}
+
+/* Hover */
+.card-title {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.card-button {
+  width: 49%;
+}
+
+.card {
+  position: relative;
+  /* display: flex;
+  align-content: stretch;
+  align-items: stretch; */
+  /* margin-bottom: 0.5rem; */
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card img {
+  display: block;
+}
+.card-bottom {
+  background: #232528;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  transition: opacity 0.5s;
+  color: #fff;
+  margin: 0;
+  padding: 1.5rem;
+}
+
+/* Mediaqueries */
+
+@media (max-width: 1280px) {
+  .row {
+    margin: 0 auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .cta .display {
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+}
+
+/* animation  */
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  -webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}

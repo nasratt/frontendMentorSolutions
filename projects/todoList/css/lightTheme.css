@@ -1,0 +1,87 @@
+body {
+  background-image: url(../images/bg-mobile-light.jpg);
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    background-image: url(../images/bg-desktop-light.jpg);
+    background-size: 100% 27vh;
+  }
+}
+
+.header__btn {
+  background: url(../images/icon-moon.svg) no-repeat center/contain;
+}
+
+.todo-list-wrapper {
+  background-color: #ffffff;
+}
+
+.todo-list-wrapper .message {
+  color: #484b6a;
+}
+
+.todo-item {
+  color: #484b6a;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e4e5f1;
+}
+
+.todo-item .todo-item__checkbox::after {
+  background: #fff;
+}
+
+.todo-item .todo-item__checkbox::before {
+  background: #d2d3db;
+}
+
+.todo-item.done .todo-item__text {
+  text-decoration: line-through;
+  color: #d2d3db;
+}
+
+.filter {
+  background: #fff;
+}
+
+.btn {
+  color: #9394a5;
+}
+
+.btn.active {
+  color: #3a7bfd;
+}
+
+.btn:not(.active):hover {
+  color: #484b6a;
+}
+
+.attribution {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.header__input::-webkit-input-placeholder {
+  color: #9394a5;
+}
+
+.header__input:-ms-input-placeholder {
+  color: #9394a5;
+}
+
+.header__input::-ms-input-placeholder {
+  color: #9394a5;
+}
+
+.header__input::placeholder {
+  color: #9394a5;
+}
+
+.todo-list-info {
+  color: #9394a5;
+  border-top: 1px solid #e4e5f1;
+}
+
+.instruction {
+  color: #d2d3db;
+}
+/*# sourceMappingURL=lightTheme.css.map */

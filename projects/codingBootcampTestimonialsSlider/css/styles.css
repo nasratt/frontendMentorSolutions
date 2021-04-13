@@ -1,0 +1,466 @@
+/* ================ CSS RESET ==================== */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html *, html *::before, html *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+/* ================ CSS RESET END ==================== */
+/* --------------------------------------------
+Custom Styles
+-------------------------------------------- */
+/* --------------- body --------------- */
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+}
+
+/* --------------- Background curve --------------- */
+.backgroundCurve {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.backgroundCurve img {
+  width: 70vw;
+}
+
+/* --------------- heroContainer --------------- */
+.heroContainer {
+  padding: 0 5vw;
+  padding: 20px 0;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+/* --------------- slidesContainer --------------- */
+.slidesContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* --------------- style of each slide --------------- */
+.slide {
+  width: 100vw;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+/* --------------- picContainer --------------- */
+.picContainer {
+  background-image: url("../images/pattern-bg.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 85vw;
+  margin-bottom: 35px;
+  width: 100%;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+}
+
+/* --------------- pic --------------- */
+.pic {
+  width: 70%;
+  position: relative;
+}
+
+.pic::before {
+  content: '';
+  display: block;
+  height: 80%;
+  width: 70%;
+  background: transparent;
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 2;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* --------------- person --------------- */
+.person {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  border-radius: 5px;
+  z-index: 4;
+}
+
+/* --------------- sliderControl --------------- */
+.sliderControl {
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 4;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* --------------- prevBtn & nextBtn --------------- */
+.prevBtn, .nextBtn {
+  display: block;
+  width: 40px;
+}
+
+.prevBtn img, .nextBtn img {
+  height: 12px;
+  pointer-events: none;
+}
+
+.prevBtn:hover, .nextBtn:hover {
+  background: #f2f2f2;
+}
+
+.prevBtn {
+  background-color: #fff;
+  border-radius: 50% 0 0 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.prevBtn:hover img {
+  -webkit-animation: pointLeft 1s infinite;
+          animation: pointLeft 1s infinite;
+}
+
+@-webkit-keyframes pointLeft {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  50% {
+    -webkit-transform: translateX(-3px);
+            transform: translateX(-3px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes pointLeft {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  50% {
+    -webkit-transform: translateX(-3px);
+            transform: translateX(-3px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+.nextBtn {
+  background-color: #fff;
+  border-radius: 0 50% 50% 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nextBtn:hover img {
+  -webkit-animation: pointRight 1s infinite;
+          animation: pointRight 1s infinite;
+}
+
+@-webkit-keyframes pointRight {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  50% {
+    -webkit-transform: translateX(3px);
+            transform: translateX(3px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes pointRight {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  50% {
+    -webkit-transform: translateX(3px);
+            transform: translateX(3px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+.quoteContainer {
+  padding-top: 30px;
+  width: 100%;
+  padding: 0 20px;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+}
+
+.quoteContainer .quote {
+  background-image: url("../images/pattern-quotes.svg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 60px;
+  padding: 0 20px;
+  padding-top: 30px;
+  text-align: center;
+  line-height: 1.4;
+  height: auto;
+}
+
+.quoteContainer .student {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+}
+
+.quoteContainer .student .name {
+  font-weight: bold;
+  margin-bottom: 7px;
+}
+
+.quoteContainer .student .position {
+  color: #999;
+  opacity: 0.8;
+}
+
+/* --------------- footer --------------- */
+.attribution {
+  text-align: center;
+  font-size: 80%;
+  line-height: 1.2;
+  padding: 5px 0;
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    font-size: 32px;
+  }
+  .heroContainer {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .backgroundCurve img {
+    width: 40vw;
+  }
+  .slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0 10vw;
+    width: 100%;
+  }
+  .picContainer {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    padding: 0;
+    height: 60vw;
+    max-height: 100vh;
+    padding: 4% 0;
+  }
+  .picContainer .pic {
+    width: 60%;
+  }
+  .quoteContainer {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .quoteContainer .quote {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: left;
+    background-position: 100px 0;
+    background-size: 120px;
+    padding-top: 60px;
+  }
+  .quoteContainer .student {
+    margin-top: 40px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    font-size: 80%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .quoteContainer .student .name {
+    margin-right: 30px;
+  }
+  .sliderControl {
+    left: 30%;
+  }
+  .attribution {
+    font-size: 70%;
+  }
+}

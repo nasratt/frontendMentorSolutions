@@ -1,0 +1,350 @@
+/* ================ CSS RESET ==================== */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+/* ================ CSS RESET END ==================== */
+/* --------------------------------------------
+Custom Styles
+-------------------------------------------- */
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html *, html *::before, html *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+/* --------------- Varialbes --------------- */
+.hidden, .defaultRange {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* --------------- Variables End --------------- */
+body {
+  font-family: Raleway, sans-serif;
+  color: #dddbff;
+  font-size: 14px;
+  background-image: url("./images/bg-mobile.svg");
+  background-size: cover;
+  background-position: center;
+}
+
+.heroContainer {
+  margin: 0 auto;
+  min-height: 100vh;
+  width: 85%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.iconsContainer {
+  width: 100%;
+  background: #1d2c67;
+  padding: 40px;
+  border-radius: 10px 70px 10px 10px;
+  margin: 20px;
+}
+
+.storageContainer {
+  margin: 20px;
+  position: relative;
+  width: 100%;
+  background: #1d2c67;
+  padding: 30px;
+  border-radius: 10px 10px 10px 10px;
+  text-align: center;
+}
+
+.logo {
+  margin-bottom: 30px;
+}
+
+.icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.singleIcon {
+  width: 60px;
+  height: 60px;
+  background: #0c122c;
+  margin-right: 20px;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bold {
+  font-weight: 700;
+  color: #fff;
+}
+
+.customRange {
+  width: 100%;
+  height: 24px;
+  background: #0c122c;
+  margin: 20px 0 10px 0;
+  border-radius: 20px;
+  padding: 3px;
+}
+
+.slider {
+  display: block;
+  width: 70%;
+  height: 18px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#ffa399), to(#ff4d97));
+  background-image: linear-gradient(90deg, #ffa399, #ff4d97);
+  border-radius: 20px;
+  position: relative;
+  padding: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.sliderHead {
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+  background: #dddbff;
+  border-radius: 50%;
+}
+
+.sliderText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.leftStorage {
+  width: 60%;
+  max-width: 200px;
+  height: 80px;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background: #fff;
+  border-radius: 10px;
+  color: #222;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.leftStorageVal {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.leftStorageText {
+  text-transform: uppercase;
+  color: #22222266;
+  font-weight: bold;
+}
+
+.attribution {
+  text-align: center;
+  color: #dddbff;
+  padding: 20px;
+}
+
+.attribution a {
+  color: #848794;
+}
+
+@media screen and (min-width: 769px) {
+  body {
+    background-image: url("./images/bg-desktop.svg");
+    background-size: 100% 50%;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-color: #0c122c;
+  }
+  .heroContainer {
+    width: 70%;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+  .iconsContainer {
+    max-width: 400px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .heroContainer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 70%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: end;
+        align-content: flex-end;
+    height: auto;
+  }
+  .leftStorage {
+    border-bottom-right-radius: 0;
+    top: -60px;
+    right: -65px;
+    left: auto;
+  }
+  .leftStorage::after {
+    content: "";
+    display: block;
+    border-left: 15px solid #fff;
+    border-top: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    right: -15px;
+    bottom: -14px;
+  }
+  .storageContainer {
+    margin-bottom: -20px;
+  }
+}

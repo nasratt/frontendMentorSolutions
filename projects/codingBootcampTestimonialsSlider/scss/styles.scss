@@ -1,0 +1,357 @@
+/* ================ CSS RESET ==================== */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+html {
+  box-sizing: border-box;
+}
+html *, html *::before, html *::after {
+  box-sizing: inherit;
+}
+/* ================ CSS RESET END ==================== */
+
+/* --------------------------------------------
+Custom Styles
+-------------------------------------------- */
+/* --------------- body --------------- */
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+}
+
+/* --------------- Background curve --------------- */
+.backgroundCurve {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  img {
+    width: 70vw;
+  }
+}
+/* --------------- heroContainer --------------- */
+.heroContainer {
+  padding: 0 5vw;
+  padding: 20px 0;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+/* --------------- slidesContainer --------------- */
+.slidesContainer {
+  display: flex;
+}
+
+/* --------------- style of each slide --------------- */
+.slide {
+  width: 100vw;
+  flex-shrink: 0;
+}
+/* --------------- picContainer --------------- */
+.picContainer {
+  background-image: url("../images/pattern-bg.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 85vw;
+  margin-bottom: 35px;
+  width: 100%;
+  flex-shrink: 1;
+}
+
+/* --------------- pic --------------- */
+.pic {
+  width: 70%;
+  position: relative;
+  
+  &::before {
+    content: '';
+    display: block;
+    height: 80%;
+    width: 70%;
+    background: transparent;
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba($color: #000000, $alpha: 0.3);
+  }
+}
+
+/* --------------- person --------------- */
+.person {
+  // height: 80%;
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  border-radius: 5px;
+  z-index: 4;
+}
+
+/* --------------- sliderControl --------------- */
+.sliderControl {
+  height: 40px;
+  display: flex;
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 4;
+  border-radius: 50%;
+  box-shadow: 0 10px 30px rgba($color: #000000, $alpha: 0.3);
+}
+
+/* --------------- prevBtn & nextBtn --------------- */
+.prevBtn, .nextBtn {
+  display: block;
+  width: 40px;
+  img {
+    height: 12px;
+    pointer-events: none;
+  }
+  &:hover {
+    background: #f2f2f2;
+  }
+}
+.prevBtn {
+  background-color: #fff;
+  border-radius: 50% 0 0 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:hover img {
+    animation: pointLeft 1s infinite;
+  }
+}
+@keyframes pointLeft {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-3px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.nextBtn {
+  background-color: #fff;
+  border-radius: 0 50% 50% 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:hover img {
+    animation: pointRight 1s infinite;
+  }
+}
+@keyframes pointRight {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(3px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.quoteContainer {
+  padding-top: 30px;
+  width: 100%;
+  padding: 0 20px;
+  flex-shrink: 1;
+  .quote {
+    background-image: url("../images/pattern-quotes.svg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 60px;
+    padding: 0 20px;
+    padding-top: 30px;
+    text-align: center;
+    line-height: 1.4;
+    height: auto;
+  }
+  .student {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    .name {
+      font-weight: bold;
+      margin-bottom: 7px;
+    }
+    .position {
+      color: #999;
+      opacity: 0.8;
+    }
+  }
+}
+
+
+/* --------------- footer --------------- */
+.attribution {
+  text-align: center;
+  font-size: 80%;
+  line-height: 1.2;
+  padding: 5px 0;
+}
+
+
+
+@media screen and (min-width: 1024px) {
+  body {
+    font-size: 32px;
+  }
+  .heroContainer {
+    justify-content: center;
+    align-items: center;
+  }
+  .backgroundCurve {
+    img {
+      width: 40vw;
+    }
+  }
+  .slide {
+    display: flex;
+    padding: 0 10vw;
+    width: 100%;
+  }
+  .picContainer {
+    order: 2;
+    padding: 0;
+    height: 60vw;
+    max-height: 100vh;
+    padding: 4% 0;
+    .pic {
+      width: 60%;
+    }
+  }
+  .quoteContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .quote {
+      padding-left: 0;
+      padding-right: 0;
+      text-align: left;
+      background-position: 100px 0;
+      background-size: 120px;
+      padding-top: 60px;
+    }
+    .student {
+      margin-top: 40px;
+      flex-direction: row;
+      font-size: 80%;
+      justify-content: flex-start;
+      .name {
+        margin-right: 30px;
+      }
+    }
+  }
+  .sliderControl {
+    left: 30%;
+  }
+  .attribution {
+    font-size: 70%;
+  }
+}
+
