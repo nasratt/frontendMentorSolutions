@@ -1,8 +1,8 @@
 $brightBlue: hsl(220, 98%, 61%);
 $checkBackground: linear-gradient(
-   to bottom,
-   hsl(192, 100%, 67%),
-   hsl(280, 87%, 65%)
+  to bottom,
+  hsl(192, 100%, 67%),
+  hsl(280, 87%, 65%)
 );
 // Dark Theme
 $veryDarkBlue: #161722;
@@ -14,74 +14,85 @@ $veryDarkGrayishBlue: #4d5066;
 $veryDarkGrayishBlue: #393a4c;
 
 body {
-   background-color: $veryDarkBlue;
-   background-image: url(../images/bg-mobile-dark.jpg);
-   @media only screen and (min-width: 768px) {
-      & {
-         background-image: url(../images/bg-desktop-dark.jpg);
-         background-size: 100% 27vh;
-      }
-   }
+  background-color: $veryDarkBlue;
+  background-image: url(../images/bg-mobile-dark.jpg);
+  @media only screen and (min-width: 768px) {
+    & {
+      background-image: url(../images/bg-desktop-dark.jpg);
+      background-size: 100% 27vh;
+    }
+  }
 }
 
 .header__input {
-   background-color: $veryDarkDesaturatedBlue;
-   caret-color: $lightGrayishBlue;
-   color: $lightGrayishBlue;
+  background-color: $veryDarkDesaturatedBlue;
+  caret-color: $lightGrayishBlue;
+  color: $lightGrayishBlue;
+}
+
+.form-btn {
+  background-color: $veryDarkBlue;
+  color: $lightGrayishBlue;
+}
+
+.form-btn:active,
+.form-btn:focus {
+  background-color: $veryDarkBlue;
+  border: none;
 }
 .header__btn {
-   background: url(../images/icon-sun.svg) no-repeat center/contain;
+  background: url(../images/icon-sun.svg) no-repeat center/contain;
 }
 
 .todo-list-wrapper {
-   background-color: $veryDarkDesaturatedBlue;
-   .message {
-      color: $lightGrayishBlue;
-   }
+  background-color: $veryDarkDesaturatedBlue;
+  .message {
+    color: $lightGrayishBlue;
+  }
 }
 .todo-item {
-   color: $lightGrayishBlue;
-   background: $veryDarkDesaturatedBlue;
-   border-bottom: 1px solid $veryDarkGrayishBlue;
-   &:hover {
-      color: $lightGrayishBlueHover;
-   }
-   & .todo-item__checkbox {
-      &::after {
-         background: $veryDarkDesaturatedBlue;
-      }
-      &::before {
-         background: $veryDarkGrayishBlue;
-      }
-   }
-   &.done .todo-item__text {
-      text-decoration: line-through;
-      color: $darkGrayishBlue;
-   }
+  color: $lightGrayishBlue;
+  background: $veryDarkDesaturatedBlue;
+  border-bottom: 1px solid $veryDarkGrayishBlue;
+  &:hover {
+    color: $lightGrayishBlueHover;
+  }
+  & .todo-item__checkbox {
+    &::after {
+      background: $veryDarkDesaturatedBlue;
+    }
+    &::before {
+      background: $veryDarkGrayishBlue;
+    }
+  }
+  &.done .todo-item__text {
+    text-decoration: line-through;
+    color: $darkGrayishBlue;
+  }
 }
 .filter {
-   background: $veryDarkDesaturatedBlue;
+  background: $veryDarkDesaturatedBlue;
 }
 .btn {
-   color: $darkGrayishBlue;
-   &.active {
-      color: $brightBlue;
-   }
-   &:not(.active):hover {
-      color: $lightGrayishBlue;
-   }
+  color: $darkGrayishBlue;
+  &.active {
+    color: $brightBlue;
+  }
+  &:not(.active):hover {
+    color: $lightGrayishBlue;
+  }
 }
 .instruction {
-   color: $darkGrayishBlue;
+  color: $darkGrayishBlue;
 }
 .attribution {
-   background: $veryDarkBlue;
-   color: $lightGrayishBlue;
+  background: $veryDarkBlue;
+  color: $lightGrayishBlue;
 }
 .header__input::placeholder {
-   color: $darkGrayishBlue;
+  color: $darkGrayishBlue;
 }
 .todo-list-info {
-   color: $darkGrayishBlue;
-   border-top: 1px solid $veryDarkGrayishBlue;
+  color: $darkGrayishBlue;
+  border-top: 1px solid $veryDarkGrayishBlue;
 }

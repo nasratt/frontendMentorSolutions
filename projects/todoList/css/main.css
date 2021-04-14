@@ -50,6 +50,7 @@ input:focus {
 }
 
 .message {
+  list-style: none;
   padding: 15px 20px;
   text-align: center;
 }
@@ -92,16 +93,29 @@ input:focus {
   overflow: hidden;
   border-radius: 8px;
   margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form-btn {
+  display: inline-block;
+  border: none;
+  outline: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-transform: uppercase;
 }
 
 .header__input {
   height: 50px;
-  width: 100%;
   border: none;
   font-family: inherit;
   padding: 20px;
   font-size: 18px;
-  border-radius: 8px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .todo-list-wrapper {

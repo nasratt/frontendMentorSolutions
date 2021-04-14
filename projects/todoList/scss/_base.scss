@@ -1,55 +1,56 @@
 $brightBlue: hsl(220, 98%, 61%);
 $checkBackground: linear-gradient(
-   to bottom,
-   hsl(192, 100%, 67%),
-   hsl(280, 87%, 65%)
+  to bottom,
+  hsl(192, 100%, 67%),
+  hsl(280, 87%, 65%)
 );
 
 html {
-   box-sizing: border-box;
+  box-sizing: border-box;
 }
 html *,
 html *::before,
 html *::after {
-   box-sizing: inherit;
-   margin: 0;
-   padding: 0;
-   transition: color 0.2s ease-in-out, background 0.2s ease-in-out,
-      border 0.2s ease-in-out;
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  transition: color 0.2s ease-in-out, background 0.2s ease-in-out,
+    border 0.2s ease-in-out;
 }
 body {
-   min-height: 100vh;
-   font-size: 18px;
-   background-position: top center;
-   background-repeat: no-repeat;
-   background-size: 100% 25vh;
-   font-family: "Josefin Sans", sans-serif;
+  min-height: 100vh;
+  font-size: 18px;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 100% 25vh;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .container {
-   margin: 0 auto;
-   max-width: 540px;
-   padding: 48px 25px;
+  margin: 0 auto;
+  max-width: 540px;
+  padding: 48px 25px;
 }
 .btn {
-   background: none;
-   border: none;
-   font-family: inherit;
-   font-size: inherit;
-   cursor: pointer;
-   &:active,
-   &:focus {
-      outline: none;
-   }
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+  &:active,
+  &:focus {
+    outline: none;
+  }
 }
 ul li {
-   list-style: none;
+  list-style: none;
 }
 input:focus {
-   outline: none;
+  outline: none;
 }
 
 .message {
-   padding: 15px 20px;
-   text-align: center;
+  list-style: none;
+  padding: 15px 20px;
+  text-align: center;
 }

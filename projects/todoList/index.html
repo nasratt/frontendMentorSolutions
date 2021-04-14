@@ -1,54 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <link
-            rel="icon"
-            type="image/png"
-            sizes="32x32"
-            href="./images/favicon-32x32.png"
-        />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-        <title>Todo app | Nasratullah Talash</title>
-        <!-- Google font link -->
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"
-            rel="stylesheet"
-        />
-        <!-- custom stylesheet -->
-        <link rel="stylesheet" href="./css/main.css" />
-        <link
-            rel="stylesheet"
-            id="themeStyleSheet"
-            href="./css/darkTheme.css"
-        />
-        <script src="./js/setTheme.js"></script>
-    </head>
-    <body>
-        <div class="container">
-            <header class="header">
-                <h1 class="header__title">Todo</h1>
-                <button
-                    class="btn header__btn"
-                    title="Change theme"
-                    id="theme-btn"
-                    data-theme="light"
-                ></button>
-                <form class="input__form">
-                    <input
-                        type="text"
-                        class="header__input"
-                        placeholder="Create a new todo..."
-                    />
-                </form>
-            </header>
-            <main>
-                <section class="todo-list-wrapper">
-                    <ul class="todo-list">
-                        <!-- 
+    <title>Todo app | Nasratullah Talash</title>
+    <!-- Google font link -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- custom stylesheet -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" id="themeStyleSheet" href="./css/darkTheme.css" />
+    <script src="./js/setTheme.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 class="header__title">Todo</h1>
+        <button
+          class="btn header__btn"
+          title="Change theme"
+          id="theme-btn"
+          data-theme="light"
+        ></button>
+        <form class="input__form">
+          <input
+            type="text"
+            class="header__input"
+            placeholder="Create a new todo..."
+            aria-label="new task decription input"
+          />
+          <button type="submit" class="form-btn">Add</button>
+        </form>
+      </header>
+      <main>
+        <div class="todo-list-wrapper">
+          <ul class="todo-list">
+            <!-- 
                      <li class="todo-item" draggable="true" id="3453555235" 
                      data-complete="false">
                         <input
@@ -62,41 +60,35 @@
                         </button>
                      </li>
                    -->
-                        <p class="message">Tasks list is empty!</p>
-                    </ul>
-                    <div class="todo-list-info">
-                        <p class="todo-count">
-                            <span class="todoItems__number">0</span> items left
-                        </p>
-                        <button class="btn clearCompleted-btn">
-                            Clear Completed
-                        </button>
-                    </div>
-                </section>
-                <section class="filter">
-                    <button class="btn btnAll btnFilter active">All</button>
-                    <button class="btn btnActive btnFilter">Active</button>
-                    <button class="btn btnCompleted btnFilter">
-                        Completed
-                    </button>
-                </section>
-            </main>
-            <p class="instruction">Drag and drop to reorder list</p>
+            <li class="message">Tasks list is empty!</li>
+          </ul>
+          <div class="todo-list-info">
+            <p class="todo-count">
+              <span class="todoItems__number">0</span> items left
+            </p>
+            <button class="btn clearCompleted-btn">Clear Completed</button>
+          </div>
         </div>
-
-        <div class="attribution">
-            Challenge by
-            <a
-                href="https://www.frontendmentor.io?ref=challenge"
-                target="_blank"
-                >Frontend Mentor</a
-            >. Coded by
-            <a href="https://twitter.com/@nasratdev" target="_blank"
-                >Nasratullah Talash</a
-            >.
+        <div class="filter">
+          <button class="btn btnAll btnFilter active">All</button>
+          <button class="btn btnActive btnFilter">Active</button>
+          <button class="btn btnCompleted btnFilter">Completed</button>
         </div>
+      </main>
+      <p class="instruction">Drag and drop to reorder list</p>
+    </div>
 
-        <script src="./js/app.js"></script>
-        <script src="./js/DragDropTouch.js"></script>
-    </body>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://twitter.com/@nasratdev" target="_blank"
+        >Nasratullah Talash</a
+      >.
+    </div>
+
+    <script src="./js/app.js"></script>
+    <script src="./js/DragDropTouch.js"></script>
+  </body>
 </html>

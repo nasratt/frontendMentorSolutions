@@ -21,6 +21,16 @@ body {
   color: #484b6a;
 }
 
+.form-btn {
+  background: #e5e5e5;
+}
+
+.form-btn:active,
+.form-btn:focus {
+  background: #e5e5e5;
+  border: none;
+}
+
 .todo-item {
   color: #484b6a;
   background-color: #ffffff;

@@ -16,6 +16,17 @@ body {
   color: #cacde8;
 }
 
+.form-btn {
+  background-color: #161722;
+  color: #cacde8;
+}
+
+.form-btn:active,
+.form-btn:focus {
+  background-color: #161722;
+  border: none;
+}
+
 .header__btn {
   background: url(../images/icon-sun.svg) no-repeat center/contain;
 }
