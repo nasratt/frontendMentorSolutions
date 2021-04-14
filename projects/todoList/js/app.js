@@ -138,11 +138,18 @@ function dropHandler(ev) {
   storeTasks();
 }
 
+function dragEndHandler(ev) {
+  document
+    .querySelectorAll(".todo-item")
+    .forEach((todoItem) => (todoItem.style.background = ""));
+}
+
 const dragDropHandlers = [
   dragStartHandler,
   dragOverHandler,
   dragLeaveHandler,
   dropHandler,
+  dragEndHandler,
 ];
 
 ["dragstart", "dragover", "dragleave", "drop"].forEach((event, ind) => {
