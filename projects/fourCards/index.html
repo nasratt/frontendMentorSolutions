@@ -1,68 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- displays site properly based on user's device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <!-- displays site properly based on user's device -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <title>Frontend Mentor | Four card feature section</title>
 
-  <title>Frontend Mentor | Four card feature section</title>
+    <!-- importing google fonts poppings family -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- importing google fonts poppings family -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet" />
+    <!-- linking custom styles sheet  -->
+    <link href="./styles.css" rel="stylesheet" />
+  </head>
 
-  <!-- linking custom styles sheet  -->
-  <link href="./styles.css" rel="stylesheet" />
-</head>
+  <body>
+    <h1>
+      <span class="lightText">Reliable, efficient delivery<br /></span>Powered
+      by Technology
+    </h1>
 
-<body>
-  <h1><span class="lightText">Reliable, efficient delivery<br /></span>Powered by Technology</h1>
-
-  <p class="mainText">
-    Our Artificial Intelligence powered tools use millions of project data points to ensure that your project is
-    successful
-  </p>
-
-
-  <div class="container">
-
-    <div class="card flexItem supervisor">
-      <h2>Supervisor</h2>
-      <p>Monitors activity to identify project roadblocks</p>
-      <img class="icon" src="./images/icon-supervisor.svg" alt="icon" />
-    </div>
-
-    <div class="centerCards flexItem">
-      <div class="card teamBuilder">
-        <h2>Team Builder</h2>
-        <p>Scans our talent network to create the optimal team for your project</p>
-        <img class="icon" src="./images/icon-team-builder.svg" alt="icon" />
-      </div>
-
-      <div class="card flexItem karma">
-        <h2>Karma</h2>
-        <p>Regularly evaluates our talent to ensure quality</p>
-        <img class="icon" src="./images/icon-karma.svg" alt="icon" />
-      </div>
-    </div>
-
-    <div class="card flexItem calculator">
-      <h2>Calculator</h2>
-      <p>Uses data from past projects to provide better delivery estimates</p>
-      <img class="icon" src="./images/icon-calculator.svg" alt="icon" />
-    </div>
-
-  </div>
-
-  <footer>
-    <p class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a
-        href="https://github.com/NasratTalash">Nasratullah Talash</a>.
+    <p class="mainText">
+      Our Artificial Intelligence powered tools use millions of project data
+      points to ensure that your project is successful
     </p>
-  </footer>
-</body>
 
+    <div class="container">
+      <div class="card flexItem supervisor">
+        <h2>Supervisor</h2>
+        <p>Monitors activity to identify project roadblocks</p>
+        <img class="icon" src="./images/icon-supervisor.svg" alt="icon" />
+      </div>
+
+      <div class="centerCards flexItem">
+        <div class="card teamBuilder">
+          <h2>Team Builder</h2>
+          <p>
+            Scans our talent network to create the optimal team for your project
+          </p>
+          <img class="icon" src="./images/icon-team-builder.svg" alt="icon" />
+        </div>
+
+        <div class="card flexItem karma">
+          <h2>Karma</h2>
+          <p>Regularly evaluates our talent to ensure quality</p>
+          <img class="icon" src="./images/icon-karma.svg" alt="icon" />
+        </div>
+      </div>
+
+      <div class="card flexItem calculator">
+        <h2>Calculator</h2>
+        <p>Uses data from past projects to provide better delivery estimates</p>
+        <img class="icon" src="./images/icon-calculator.svg" alt="icon" />
+      </div>
+    </div>
+
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://github.com/nasratt">Nasratullah Talash</a>.
+      </p>
+    </footer>
+  </body>
 </html>

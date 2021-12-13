@@ -1,73 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <title>Frontend Mentor | Single Price Grid Component</title>
 
-  <title>Frontend Mentor | Single Price Grid Component</title>
+    <!-- Linking the google font to web page -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
+    <!-- Linking the style sheet generated from sass preprocessor -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
 
-  <!-- Linking the google font to web page -->
-  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+  <body>
+    <div class="container">
+      <div class="flexItem bg-white">
+        <p class="title">Join our community</p>
 
-  <!-- Linking the style sheet generated from sass preprocessor -->
-  <link rel="stylesheet" href="css/styles.css">
+        <p class="subtitle">30-day, hassle-free money back guarantee</p>
 
-</head>
+        <p class="info">
+          Gain access to our full library of tutorials along with expert code
+          reviews. Perfect for any developers who are serious about honing their
+          skills.
+        </p>
+      </div>
 
-<body>
+      <div class="flexItem bg-cyan">
+        <p class="subtitle">Monthly Subscription</p>
 
-  <div class="container">
+        <p class="price"><span>&dollar;29</span> per month</p>
 
+        <p>Full access for less than &dollar;1 a day</p>
 
-    <div class="flexItem bg-white">
-      <p class="title">Join our community</p>
+        <button class="btn">Sign Up</button>
+      </div>
 
-      <p class="subtitle">30-day, hassle-free money back guarantee</p>
+      <div class="flexItem bg-lightCyan">
+        <p class="subtitle">Why Us</p>
 
-      <p class="info">
-        Gain access to our full library of tutorials along with expert code reviews.
-        Perfect for any developers who are serious about honing their skills.
+        <ul>
+          <li>Tutorials by industry experts</li>
+          <li>Peer &amp; expert code review</li>
+          <li>Coding exercises</li>
+          <li>Access to our GitHub repos</li>
+          <li>Community forum</li>
+          <li>Flashcard decks</li>
+          <li>New videos every week</li>
+        </ul>
+      </div>
+    </div>
+
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://github.com/nasratt">Nasratullah Talash</a>.
       </p>
-    </div>
-
-    <div class="flexItem bg-cyan">
-      <p class="subtitle">Monthly Subscription</p>
-
-      <p class="price"><span>&dollar;29</span> per month</p>
-
-      <p>Full access for less than &dollar;1 a day</p>
-
-      <button class="btn">Sign Up</button>
-    </div>
-
-    <div class="flexItem bg-lightCyan">
-      <p class="subtitle">Why Us</p>
-
-      <ul>
-        <li>Tutorials by industry experts</li>
-        <li>Peer &amp; expert code review</li>
-        <li>Coding exercises</li>
-        <li>Access to our GitHub repos</li>
-        <li>Community forum</li>
-        <li>Flashcard decks</li>
-        <li>New videos every week</li>
-      </ul>
-    </div>
-
-
-  </div>
-
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="https://github.com/NasratTalash">Nasratullah Talash</a>.
-    </p>
-  </footer>
-</body>
-
+    </footer>
+  </body>
 </html>
